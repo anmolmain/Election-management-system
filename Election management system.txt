@@ -1,0 +1,580 @@
+/*Made by Anmol main
+
+Student - b.tech CSE
+
+Punjabi university */
+
+
+
+#include <stdio.h>
+
+#include<windows.h>
+
+#include<stdlib.h>
+
+
+
+int p1();
+
+int p2();
+
+int p3();
+
+int p4();
+
+int p5();
+
+int p6();
+
+int p7();
+
+int p8();
+
+int p9();
+
+int p10();
+
+int a, b, c, d, e, j, ii,jj,f,g,h,num,ps, count;
+
+int i = 0;
+
+
+
+int main()
+
+{
+    printf("Made by : Anmol main\nStudent : B.tech CSE\nPunjabi university Patiala\n");
+big:
+    printf("_______________________________________________________");
+
+    printf ("\nBEFORE SETTTING THE NAMES OF PARTIES \nPLEASE COFIRM THAT YOU ARE ADMIN\n\nENTER ADMIN KEY NUMBER\n");
+
+    printf("_______________________________________________________\n");
+
+    scanf("%d",&ps);
+
+    printf("_______________________________________________________\n");
+
+    if (ps==1212)
+
+
+
+
+
+    {
+
+        system("CLS");
+
+        printf("\nADMIN CONFIRMED\n");
+
+
+
+        printf("number of parties : ");
+
+        scanf("%d", &num);
+
+        if (num>10)
+
+
+
+        {
+
+            Beep(1500,800);
+
+            printf("________________________________________________________________\n");
+
+            printf("MAXIMUM OF 10 PARTIES CAN PARTICIPATE IN ELECTIONS\n");
+
+            printf("________________________________________________________________\n");
+
+            goto big;
+
+        }
+
+        else
+
+        {
+
+            char name[1000][1000];
+
+            printf("_______________________________");
+
+            printf("\nParticipating  parties names\n");
+
+            printf("_______________________________\n");
+
+            for (i = 0; i < num; i++)
+
+            {
+
+                scanf("%s", &name[i]);
+
+            }
+
+            system("CLS");
+
+
+
+            /*  printf("Participating parties are\n");
+
+              for (i = 0; i < num; i++)
+
+              {
+
+                  printf("%s\n", name[i]);
+
+              }
+
+            printf("\n\n\n\n");
+
+              */
+
+            int v;
+
+            while (1)
+
+            {
+
+
+
+                printf("WELCOME\n\n");
+
+
+
+
+
+                for (i = 0; i < num; i++)
+
+                {
+
+                    printf("\n_______________________________\n");
+
+                    printf("%s PARTY NUMBER = %d\nPress %d to vote %s\n",name[i], i+1,i+1,name[i]);
+
+                    printf("\n_______________________________\n");
+
+                }
+
+
+
+                scanf("%d", &v);
+
+                if (v==7070)
+
+
+
+                {
+
+                    Beep(1500,1500);
+
+
+
+                    goto end;
+
+                }
+
+
+
+                else if (v>num)
+
+                {
+
+                    printf("\n_______________________________\n");
+
+                    printf("\n\nTHERE ARE ONLY %d PARTIES PARTICIPATING IN THIS ELECTIONS\nSO CHOOSE PROPERLY\n\n",num);
+
+                    printf("\n_______________________________\n");
+
+                }
+
+
+
+                else
+
+                {
+
+
+
+                    switch (v)
+
+                    {
+
+                    case 1:
+
+                        p1();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 2:
+
+                        p2();
+
+                        printf("response recorded .....");
+
+                        //  _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 3:
+
+                        p3();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 4:
+
+                        p4();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 5:
+
+                        p5();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+                    case 6:
+
+                        p6();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 7:
+
+                        p7();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 8:
+
+                        p8();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 9:
+
+                        p9();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 10:
+
+                        p10();
+
+                        printf("response recorded .....");
+
+                        // _sleep(500);
+
+                        Beep(500, 700);
+
+                        system("CLS");
+
+                        break;
+
+
+
+                    case 7070:
+
+                        goto end;
+
+                        system("CLS");
+
+                        printf("response recorded .....");
+
+                        break;
+
+                    default:
+
+                        printf("enter valid id");
+
+                        break;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+end:
+
+        {
+
+            Beep(1500,1500);
+
+            printf("\n_______________________________\n");
+
+            printf ("\nPLEASE COFIRM THAT YOU ARE ADMIN\n\nENTER ADMIN PASSWORD\n");
+
+            printf("\n_______________________________\n");
+
+            scanf("%d",&ps);
+
+            if (ps==7070)
+
+            {
+
+
+
+                printf("\n_______________________________\n");
+
+                printf("\nADMIN CONFIRMED\n");
+
+                printf("\n_______________________________\n");
+
+            }
+
+            else
+
+            {
+
+                goto  big;
+
+            }
+
+
+
+            printf("\n____________________________________\n");
+
+            printf("TOTAL PARIES PARTICIPATED = %d\n\n",num);
+
+            printf("the number of votes of party 1 = %d\n",a);
+
+            printf("the number of votes of party 2 = %d\n",b);
+
+            printf("the number of votes of party 3 = %d\n",c);
+
+            printf("the number of votes of party 4 = %d\n",d);
+
+            printf("the number of votes of party 5 = %d\n",e);
+
+            printf("the number of votes of party 6 = %d\n",f);
+
+            printf("the number of votes of party 7 = %d\n",g);
+
+            printf("the number of votes of party 8 = %d\n",h);
+
+            printf("the number of votes of party 9 = %d\n",ii);
+
+            printf("the number of votes of party 10 = %d\n",jj);
+
+            printf("\n____________________________________\n");
+
+            printf("TOTAL NUMBER OF VOTES =%d ", count);
+
+            printf("\n____________________________________\n");
+
+        }
+
+
+
+    }
+
+    else
+
+        printf("\n________________________________\n");
+
+    printf("\n.....................................................................\n");
+
+    printf("\n________________________________\n");
+
+    Beep(1000,1500);
+
+
+
+
+
+
+
+
+
+}
+
+
+
+int p1()
+
+{
+
+    a++;
+
+    count++;
+
+}
+
+int p2()
+
+{
+
+    b++;
+
+    count++;
+
+}
+
+int p3()
+
+{
+
+    c++;
+
+    count++;
+
+}
+
+int p4()
+
+{
+
+    d++;
+
+    count++;
+
+}
+
+int p5()
+
+{
+
+    e++;
+
+    count++;
+
+}
+
+int p6()
+
+{
+
+    f++;
+
+    count++;
+
+}
+
+int p7()
+
+{
+
+    g++;
+
+    count++;
+
+}
+
+int p8()
+
+{
+
+    h++;
+
+    count++;
+
+}
+
+int p9()
+
+{
+
+    ii++;
+
+    count++;
+
+}
+
+int p10()
+
+{
+
+    jj++;
+
+    count++;
+
+}
